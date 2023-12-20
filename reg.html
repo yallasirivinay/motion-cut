@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body style="background-image: url(https://thumbs.dreamstime.com/b/registration-online-membership-network-internet-business-technology-concept-104512007.jpg); background-repeat: no-repeat;background-size: cover; background-attachment: fixed;">
+
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="confirmation" class="hidden">
+    <p>Thank you for registering!</p>
+  </div>
+
+  <script src="reg.js"></script>
+</body>
+</html>
